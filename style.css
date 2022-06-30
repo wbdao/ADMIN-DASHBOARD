@@ -31,3 +31,48 @@ body{
     align-items: center;
     gap: 20px;
 }
+.content{
+    background: #e2f4ff;
+}
+.topbar{
+    background: #fff;
+    padding: 20px;
+    box-shadow: 4px 0px 2px 4px #eee;
+}
+.top-right,
+.top-left{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex: 1;
+}
+.top-left input{
+    padding: 7px 10px;
+    border-radius: 20px;
+    border: none;
+    background: #e2f4ff;
+    outline: 0;
+    width: 100%;
+}
+.top-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.topbar-content{
+    display: flex;
+}
+.top-btn{
+    background: blue;
+    border: none;
+    color: #fff;
+    border-radius: 20px;
+    padding: 8px 15px;
+    font-weight: bold;
+    width: 100px;
+    cursor: pointer;
+    transition: all .3s;
+}
+.top-btn:hover{
+    background: #6161d1;
+}
