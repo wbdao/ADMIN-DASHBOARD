@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+.conatiner{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+.sidebar{
+    height: 100vh;
+    background: #3b82f6;
+    color: #fff;
+}
+.logo{
+    display: flex;
+    gap:10px; 
+    padding: 20px;
+}
+.menu{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.m-item{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
