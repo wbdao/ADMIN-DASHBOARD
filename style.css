@@ -11,9 +11,10 @@ body{
     grid-template-columns: 1fr 5fr;
 }
 .sidebar{
-    height: 100vh;
+    height: 100%;
     background: #3b82f6;
     color: #fff;
+    position: sticky;
 }
 .logo{
     display: flex;
@@ -38,6 +39,9 @@ body{
     background: #fff;
     padding: 20px;
     box-shadow: 4px 0px 2px 4px #eee;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 .top-right,
 .top-left{
@@ -75,4 +79,45 @@ body{
 }
 .top-btn:hover{
     background: #6161d1;
+}
+.project{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 20px;
+}
+.card-conatiner{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 0;
+}
+.project-card{
+    width: 40%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+
+}
+.project-card h4{
+    padding-bottom: 10px;
+}
+.project-card p{
+    color: #616161;
+}
+.project-card::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 100%;
+    background: #ffd04e;
+}
+.project-card .icon{
+    display: flex;
+    padding: 40px 20px 0 0;
+    gap: 15px;
+    justify-content: end;
 }
